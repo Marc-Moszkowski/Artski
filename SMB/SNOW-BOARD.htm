@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>SNOW-BOARD</TITLE>
+<META http-equiv=CONTENT-TYPE content="text/html; charset=windows-1252">
+<META content="MSHTML 6.00.2900.2802" name=GENERATOR>
+<META content=20031104;18464205 name=CREATED>
+<META content=20050610;4281125 
+name=CHANGED><!-- Created with AOLpress/2.0 --></HEAD>
+<BODY lang=en-US dir=ltr bgColor=#ffffff>
+<P align=center><IMG height=56 src="SNOW-BOARD_files/smb.gif" width=377 
+align=bottom border=0 name=Graphic1> </P>
+<P align=center><IMG height=56 src="SNOW-BOARD_files/st.gif" width=344 
+align=bottom border=0 name=Graphic2> </P>
+<P align=center><A href="file:///C:/A-DATA/SMB/ans/comites/smb/smba.htm"><IMG 
+height=89 alt=SMB src="SNOW-BOARD_files/smblog4.gif" width=99 align=bottom 
+border=0 name=Graphic3></A> </P>
+<P align=center>Cliquez sur le logo pour aller vers le Comité </P>
+<P align=center><FONT color=#000080><A 
+href="http://www.sno-academie.fr.st/"><FONT color=#000080><IMG height=125 
+src="SNOW-BOARD_files/Logosno2.jpg" width=173 align=bottom border=1 
+name=Graphic4></FONT></A></FONT> </P>
+<P align=center>Cliquez pour aller vers SNO ACADEMIE <BR>Ecole de Snowboard (et 
+de Ski) Internationale </P>
+<P align=center><IMG height=82 src="SNOW-BOARD_files/LogoESI.JPG" width=118 
+align=bottom border=0 name=Graphic5><BR><BR>
+<SCRIPT language=JavaScript>
+/*
+World Population Calculator
+By Adam Brown (adambrown2@iname.com)
+For this script and more,
+Visit http://javascriptkit.com
+*/
+
+function maind()
+{
+	startdate = new Date()
+	now(startdate.getYear(),startdate.getMonth(),startdate.getDate(),startdate.getHours(),startdate.getMinutes(),startdate.getSeconds())
+}
+
+
+
+function ChangeValue(number,pv)
+{
+	numberstring =""
+	var j=0 
+	var i=0
+	while (number > 1)
+	 { 
+
+	    numberstring = (Math.round(number-0.5) % 10) + numberstring
+	    number= number / 10
+	    j++
+	    if (number > 1 && j==3) { 
+			numberstring = "," + numberstring 
+			j=0}
+	    i++
+	 }
+
+	 numberstring=numberstring
+
+if (pv==1) { document.schuld.schuld.value = numberstring }
+//if (pv==2) {document.newnow.newnow.value = numberstring}
+
+}
+
+	
+
+function now(year,month,date,hours,minutes,seconds) 
+{       
+	startdatum = new Date(year,month,date,hours,minutes,seconds)
+
+var now = 5600000000.0
+var now2 = 5690000000.0
+var groeipercentage = (now2 - now) / now *100
+var groeiperseconde = (now * (groeipercentage/100))/365.0/24.0/60.0/60.0 
+nu = new Date ()                
+schuldstartdatum = new Date (96,1,1)                            
+secondenoppagina = (nu.getTime() - startdatum.getTime())/1000
+totaleschuld= (nu.getTime() - schuldstartdatum.getTime())/1000*groeiperseconde + now
+ChangeValue(totaleschuld,1);
+//ChangeValue(secondenoppagina*groeiperseconde,2);
+
+
+
+timerID = setTimeout("now(startdatum.getYear(),startdatum.getMonth(),startdatum.getDate(),startdatum.getHours(),startdatum.getMinutes(),startdatum.getSeconds())",200)
+}
+
+
+window.onload=maind
+</SCRIPT>
+Le nombre d'êtres humains sur la planète Terre est à cette seconde, 
+probablement... </P>
+<FORM name=schuld action=../SMB>
+<DIV align=center>
+<P><INPUT size=25 name=schuld> </P></DIV></FORM>
+<P align=center><A 
+href="file:///C:/ControlPanel/">ControlPanel</A></P></BODY></HTML>
